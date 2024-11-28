@@ -1,0 +1,35 @@
+# Core dependencies
+Django==4.2.6                # Specify the Django version
+djangorestframework==3.15.0  # For building REST APIs
+
+# Database support (choose as needed)
+mysqlclient==2.1.1           # For MySQL
+psycopg2-binary==2.9.8       # For PostgreSQL
+sqlite3                      # For SQLite (built-in)
+
+# Authentication and security
+django-allauth==0.57.0       # For social login
+django-rest-auth==0.9.5      # REST authentication tools
+
+# Frontend integration
+django-webpack-loader==1.8.0 # If integrating with Webpack
+
+# Static files management
+django-storages==1.13.2      # For cloud storage (e.g., AWS S3)
+
+# Background tasks and queues
+celery==5.3.4                # For background tasks
+redis==5.0.1                 # Redis as a Celery broker
+
+# Testing and debugging
+pytest-django==4.5.2         # For testing
+django-debug-toolbar==3.9.0  # Debugging tools
+
+# Deployment
+gunicorn==20.1.0             # WSGI server for production
+
+# Environment management
+python-decouple==4.0.0       # For environment variables
+
+# Additional tools
+django-extensions==3.2.3     # For useful extensions like shell_plus

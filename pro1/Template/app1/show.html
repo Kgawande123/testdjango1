@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}
+    <title>add</title>
+{% endblock %}
+{% block content %}
+<div class=" bg-secondary mt-2 rounded-3 form-control-4 ">
+<h1><center>Employee Registration Form </center></h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form|crispy }}
+    <input type="submit" class=" btn btn-success float-end col-6">
+    <input type="reset" class=" btn btn-warning float-end col-6">
+
+</form>
+    </div>
+{% endblock %}
